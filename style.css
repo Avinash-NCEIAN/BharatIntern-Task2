@@ -1020,6 +1020,16 @@ header .bars:hover{
 .service .box p{
     font-size: 1rem;
 }
+    
+    
+.contact .box-1 .box1 div{
+    width: 280px;
+}
+
+.contact .box-1 .box2 textarea{
+    width: 280px;
+    height:150px;
+}
 
 
 
