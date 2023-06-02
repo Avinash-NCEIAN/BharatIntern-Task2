@@ -1,63 +1,24 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
-:root{
-    --bg-black-900: #000000;
-    --bg-black-1000: #dddddd;
-    --bg-black-50: #2b2c2f;
-    --text-black-900: #000000; 
-    --text-black-700: #555555; 
-    --text-black-600: #666666; 
-    --text-black-300: #bbbbbb;
-    --skin-color: #d54d66;
-    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
-    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
-    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
-    --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
-    --bg-opacity: rgba(255, 255, 255, 0.5);
-    --fg-cursor-animation: #ccc;
-    --fb-typing-text: #d54d66;
-    --selection-fg: #042621;
-    --selection-bg: rgb(44, 187, 132);
-}
-
-body.dark{
-    --bg-black-900: #ffffff;
-    --bg-black-1000: #353535;
-    --bg-black-50: #2b2c2f;
-    --bg-opacity: rgba(43, 44, 47, 0.5);
-    --text-black-900: #ffffff; 
-    --text-black-700: #ffffff; 
-    --text-black-600: #bbbbbb; 
-    --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
-    --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
-    --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
-    --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
-    --bg-scroll: rgba(43, 44, 47, 0.5);
-    --selection-fg: rgb(224 223 225);
-    --selection-bg: rgb(104 116 181);
-}
-
 body{
     font-size: 16px;
     line-height: 1.5;
     /* overflow: hidden; */
     background-color: #2b2c2f;
-    text-transform: capitalize;
     /* overflow-y: hidden; */
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: var(--skin-color) var(--bg-scroll);
 }
 
 
 body::-webkit-scrollbar-track {
-    background: var(--bg-scroll);
+    background:  rgba(43, 44, 47, 0.5);
 }
 body::-webkit-scrollbar-thumb {
     background-color: rgba(48, 142, 214, 0.875);
     border-radius: 6px;
-    border: 3px solid var(--bg-scroll);
+    border: 3px solid  rgba(43, 44, 47, 0.5);
 }
 
 body.stop-scrolling{
@@ -716,6 +677,7 @@ header .bars:hover{
     padding: .5rem 1rem;
     border: none;
     margin: 1rem;
+    margin-left: 0;
     border-radius: 20px;
     color: white;
 }
@@ -1020,8 +982,7 @@ header .bars:hover{
 .service .box p{
     font-size: 1rem;
 }
-    
-    
+
 .contact .box-1 .box1 div{
     width: 280px;
 }
@@ -1029,6 +990,7 @@ header .bars:hover{
 .contact .box-1 .box2 textarea{
     width: 280px;
     height:150px;
+    margin-top: 1rem;
 }
 
 
